@@ -96,10 +96,22 @@
                 <a class="h2 product-single__title" href="{{ product.url }}">{{ product.title }}</a>
                 {% comment %} end code change per 4.1.1 customization {% endcomment %}
               {%- else -%}
+                {% comment %} add popups to values - am {% endcomment %}
+                {% render 'values-popup' %}
                 {% comment %} display values above title on desktop. 4.1.1 mod {% endcomment %}
-                <div class="product-single__values mobile-hidden">
-                  {% if section.settings.value_one != '' %}<span>{{ section.settings.value_one }}</span>{% endif %}
-                  {% if section.settings.value_two != '' %}<span>{{ section.settings.value_two }}</span>{% endif %}
+                <div class="product-single__values">
+                  {% if section.settings.value_one != '' %}
+                    <span id="product-value-one" class="values-span underline-value">
+                      {{ section.settings.value_one }}
+                      <div class="open-page lazyload"></div>
+                    </span>
+                  {% endif %}
+                  {% if section.settings.value_two != '' %}
+                    <span id="product-value-two"  class="values-span">
+                      {{ section.settings.value_two }}
+                      <div class="open-page lazyload"></div>
+                    </span>
+                  {% endif %}
                 </div>
                  {% comment %} end code change per 4.1.1 customization {% endcomment %}
                 <h1 class="h2 product-single__title">

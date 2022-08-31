@@ -19,6 +19,12 @@ window.onload = function(){
   var recentViewModal = document.getElementById("recent-view-popup"); // recent view with history
   var recentViewModal2 = document.getElementById("none-recent-popup"); // no recent view avalable
   var recentViewBtn = document.getElementById("recent-view-btn");    // trigger
+  // popups for product values above PDP title
+  var valueModal1 = document.getElementById("value-one-popup");
+  var valueBtn1 = document.getElementById("product-value-one");   // trigger
+  var valueModal2 = document.getElementById("value-two-popup");
+  var valueBtn2 = document.getElementById("product-value-two");   // trigger
+
 
   Object.keys(mediaBtnDesktop).forEach((key) => {
     mediaLinkDesktop[key] = mediaBtnDesktop[key].getAttribute("data-iframe-link");
@@ -61,6 +67,18 @@ window.onload = function(){
       recentViewBtn.onclick = function() {
         recentViewModal.style.display = "flex";
       }
+    }
+  }
+
+  if (valueBtn1 != null){
+    valueBtn1.onclick = function() {
+      valueModal1.style.display = "flex";
+    }
+  }
+
+  if (valueBtn2 != null){
+    valueBtn2.onclick = function() {
+      valueModal2.style.display = "flex";
     }
   }
 
@@ -114,6 +132,12 @@ window.onload = function(){
     }
     if (recentViewModal2 != null) {
       recentViewModal2.style.display = "none";
+    }
+    if (valueModal1 != null) {
+      valueModal1.style.display = "none";
+    }
+    if (valueModal2 != null) {
+      valueModal2.style.display = "none";
     }
   }
 

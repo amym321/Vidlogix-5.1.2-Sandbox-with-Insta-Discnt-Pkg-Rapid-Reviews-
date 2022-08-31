@@ -13033,3 +13033,54 @@ button#dummy-chat-button.chat-toggle {
 .modal {
   z-index: 26000 ;
 }
+
+/* open popup files icon */
+#none-recent-popup .open-page,
+.product-single__values .open-page { 
+  height: 18px;
+  transform: translateY(4px);
+  display: inline;
+  padding-left: 8px;
+}
+.product-single__values .open-page {
+  padding-left: 4px;
+}
+
+/* add open popup files icon */
+.product-single__values span div {
+  content: url(//cdn.shopify.com/s/files/1/0056/9632/3651/files/open_new_page_7.png?v=1653226737);
+}
+
+/* product values above PDP title */
+.product-single__values span {
+  position: relative;
+  overflow: hidden;
+  transition: background .2s ease 0s;
+}
+
+.product-single__values span:hover  {
+  cursor: pointer;
+  background: #f8f8f8;
+  /* transition-delay: .25s; */
+}
+
+.underline-value {
+  text-decoration-line: underline;
+  /* text-decoration-style: dotted; */
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+  /* text-decoration-thickness: 1.3px; */
+  text-decoration-thickness: 1px;
+}
+
+/* values buttons above PDP produt title */
+{% comment %}
+.product-single__values span {
+  /* letter-spacing: .5px; */
+  color: #000;
+  font-weight: var(--typeBaseWeight);
+  /* font-family: var(--typeBasePrimary),var(--typeBaseFallback); */
+  /* line-height: var(--typeBaseLineHeight); */
+  text-transform:none;
+}
+{% endcomment %}
