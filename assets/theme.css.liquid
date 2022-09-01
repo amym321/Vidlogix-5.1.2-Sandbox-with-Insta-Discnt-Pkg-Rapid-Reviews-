@@ -13034,6 +13034,7 @@ button#dummy-chat-button.chat-toggle {
   z-index: 26000 ;
 }
 
+{% comment %}
 /* open popup files icon */
 #none-recent-popup .open-page,
 .product-single__values .open-page { 
@@ -13050,6 +13051,19 @@ button#dummy-chat-button.chat-toggle {
 .product-single__values span div {
   content: url(//cdn.shopify.com/s/files/1/0056/9632/3651/files/open_new_page_7.png?v=1653226737);
 }
+{% endcomment %}
+
+.product-single__values span a::after
+{
+  background-image: url('//cdn.shopify.com/s/files/1/0056/9632/3651/files/open_new_page_7.png?v=1653226737');
+  background-size: 18px 18px;
+  margin-left: 7px;
+  display: inline-block;
+  width: 18px; 
+  height: 18px;
+  transform: translateY(4px);
+  content:"";
+}
 
 /* product values above PDP title */
 .product-single__values span {
@@ -13064,6 +13078,7 @@ button#dummy-chat-button.chat-toggle {
   /* transition-delay: .25s; */
 }
 
+{% comment %}
 .underline-value {
   text-decoration-line: underline;
   /* text-decoration-style: dotted; */
@@ -13072,6 +13087,7 @@ button#dummy-chat-button.chat-toggle {
   /* text-decoration-thickness: 1.3px; */
   text-decoration-thickness: 1px;
 }
+{% endcomment %}
 
 /* values buttons above PDP produt title */
 {% comment %}

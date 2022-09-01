@@ -97,8 +97,9 @@
                 {% comment %} end code change per 4.1.1 customization {% endcomment %}
               {%- else -%}
                 {% comment %} add popups to values - am {% endcomment %}
-                {% render 'values-popup' %}
                 {% comment %} display values above title on desktop. 4.1.1 mod {% endcomment %}
+                {% comment %}
+                {% render 'values-popup' %}
                 <div class="product-single__values">
                   {% if section.settings.value_one != '' %}
                     <span id="product-value-one" class="values-span underline-value">
@@ -113,17 +114,20 @@
                     </span>
                   {% endif %}
                 </div>
+                {% endcomment %}
                 
                 {% comment %} Beacon Help Scout popups - am {% endcomment %}
                 <div class="product-single__values">
-                  <span id="product-value-one" class="values-span">
-                    <a href="#" data-beacon-article-modal="630fcf254cde766bbe140fbe">Beacon POPUP - Shipping & Returns</a>
-                    <div class="open-page lazyload"></div>
-                  </span>
-                  <span id="product-value-two" class="values-span">
-                    <a href="#" data-beacon-article-inline="630fb93890c29a3d732c39e6">Beacon TOOLTIP - free-warranty</a>
-                    <div class="open-page lazyload"></div>
-                  </span>
+                  {% if section.settings.value_one != '' %}
+                    <span id="product-value-one" class="values-span" style="">
+                      <a href="#" data-beacon-article-modal="630fcf254cde766bbe140fbe">{{ section.settings.value_one }}</a>
+                    </span>
+                  {% endif %}
+                  {% if section.settings.value_two != '' %}
+                    <span id="product-value-two" class="values-span">
+                      <a href="#" data-beacon-article-modal="630fb93890c29a3d732c39e6">{{ section.settings.value_two }}</a>
+                    </span>
+                  {% endif %}
                 </div>
 
 
