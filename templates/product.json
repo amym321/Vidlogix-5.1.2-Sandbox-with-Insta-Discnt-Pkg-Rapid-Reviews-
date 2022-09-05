@@ -184,7 +184,7 @@
         "loox-product-reviews"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "space_around": true
       }
     },
