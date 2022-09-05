@@ -211,14 +211,9 @@
         "divider": false
       }
     },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "settings": {
-        "recent_count": 4
-      }
-    },
     "1643590083d72e73b9": {
       "type": "newsletter",
+      "disabled": true,
       "blocks": {
         "164359008339d9d726-0": {
           "type": "title",
@@ -250,6 +245,12 @@
         "unsubscribe_url": "shopify:\/\/pages\/contest",
         "show_divider": false
       }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 4
+      }
     }
   },
   "order": [
@@ -261,7 +262,7 @@
     "collection-return",
     "loox-product-reviews-app-section",
     "text-and-image",
-    "recently-viewed",
-    "1643590083d72e73b9"
+    "1643590083d72e73b9",
+    "recently-viewed"
   ]
 }
