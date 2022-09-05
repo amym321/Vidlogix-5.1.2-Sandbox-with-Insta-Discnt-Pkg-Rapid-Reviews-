@@ -2,10 +2,10 @@
   "sections": {
     "1638402140320849a6": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "9a9f3525-d3f4-4e3e-b463-cd49f39d935f": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "heading": "",
             "text": "Free shipping on US orders over $49",
@@ -166,14 +166,6 @@
       "settings": {
       }
     },
-    "1637459177d4db9b86": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "loox-product-reviews-app-section": {
       "type": "apps",
       "blocks": {
@@ -267,7 +259,6 @@
     "sub",
     "product-recommendations",
     "collection-return",
-    "1637459177d4db9b86",
     "loox-product-reviews-app-section",
     "text-and-image",
     "recently-viewed",
