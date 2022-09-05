@@ -117,9 +117,11 @@
     },
     "1659635467b4378b21": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "f96f4eff-4ba8-48de-aa0f-5ae0dbb5af46": {
           "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "disabled": true,
           "settings": {
             "active": true,
             "top_color_predefined": "gold_bright"
@@ -127,6 +129,7 @@
         },
         "a0c79d2d-f6fb-47bc-9209-9f02432e653b": {
           "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/reviews\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "disabled": true,
           "settings": {
             "hide": "show",
             "layout": "rows",
