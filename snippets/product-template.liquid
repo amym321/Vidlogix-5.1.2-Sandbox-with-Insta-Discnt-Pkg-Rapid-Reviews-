@@ -71,23 +71,7 @@
           <div class="grid__item {{ product_image_width }} product-single__sticky">
             
 
-                        {% comment %}magictoolbox code begins{% endcomment %}
-                        {% assign Magic360ImageCount = 36 %}
-                        {% assign disable360 = false %}
-                        {% for tag in product.tags %}
-                            {% if tag == 'no360' %}
-                                {% assign disable360 = true %}
-                            {% endif %}
-                            {% assign tag_ = tag | replace: 'spinimages=', '' %}
-                            {% if tag_ != tag %}
-                                {% assign Magic360ImageCount = tag_  | times: 1 %}
-                            {% endif %}
-                        {% endfor %}
-
-                        {% capture m360 %}{% render 'magic360' %}{% endcapture %}
-
-                        {% if m360 contains 'Liquid error' or product.images.size < Magic360ImageCount or disable360 %}
-                            {% comment %}magictoolbox replace code begins{% endcomment %}
+                        
                             {%- render 'product-images',
               section_id: section_id,
               product: product,
@@ -101,24 +85,7 @@
               video_looping: video_looping,
               video_style: video_style
             -%}
-                            {% comment %}magictoolbox replace code ends{% endcomment %}
-                        {% else %}
-                            <div  style="display:none">{%- render 'product-images',
-              section_id: section_id,
-              product: product,
-              isModal: isModal,
-              image_position: image_position,
-              product_zoom_enable: product_zoom_enable,
-              product_zoom_size: product_zoom_size,
-              product_image_size: product_image_size,
-              thumbnail_arrows: thumbnail_arrows,
-              thumbnail_position: thumbnail_position,
-              video_looping: video_looping,
-              video_style: video_style
-            -%}</div>
-                            {{ m360 }}
-                        {% endif %}
-                        {% comment %}magictoolbox code ends{% endcomment %}
+                            
 
                     
           </div>
@@ -573,23 +540,7 @@
           <div class="grid__item {{ product_image_width }} product-single__sticky">
             
 
-                        {% comment %}magictoolbox code begins{% endcomment %}
-                        {% assign Magic360ImageCount = 36 %}
-                        {% assign disable360 = false %}
-                        {% for tag in product.tags %}
-                            {% if tag == 'no360' %}
-                                {% assign disable360 = true %}
-                            {% endif %}
-                            {% assign tag_ = tag | replace: 'spinimages=', '' %}
-                            {% if tag_ != tag %}
-                                {% assign Magic360ImageCount = tag_  | times: 1 %}
-                            {% endif %}
-                        {% endfor %}
-
-                        {% capture m360 %}{% render 'magic360' %}{% endcapture %}
-
-                        {% if m360 contains 'Liquid error' or product.images.size < Magic360ImageCount or disable360 %}
-                            {% comment %}magictoolbox replace code begins{% endcomment %}
+                        
                             {%- render 'product-images',
               section_id: section_id,
               product: product,
@@ -603,24 +554,7 @@
               video_looping: video_looping,
               video_style: video_style
             -%}
-                            {% comment %}magictoolbox replace code ends{% endcomment %}
-                        {% else %}
-                            <div  style="display:none">{%- render 'product-images',
-              section_id: section_id,
-              product: product,
-              isModal: isModal,
-              image_position: image_position,
-              product_zoom_enable: product_zoom_enable,
-              product_zoom_size: product_zoom_size,
-              product_image_size: product_image_size,
-              thumbnail_arrows: thumbnail_arrows,
-              thumbnail_position: thumbnail_position,
-              video_looping: video_looping,
-              video_style: video_style
-            -%}</div>
-                            {{ m360 }}
-                        {% endif %}
-                        {% comment %}magictoolbox code ends{% endcomment %}
+                            
 
                     
           </div>
